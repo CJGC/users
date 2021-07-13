@@ -1,1 +1,19 @@
-<p>users works!</p>
+<p-table [value]="users" [paginator]="true" [rows]="10" sortMode="multiple">
+    <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="id">id<p-sortIcon field="id"></p-sortIcon></th>
+            <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
+            <th pSortableColumn="doc">Doc <p-sortIcon field="doc"></p-sortIcon></th>
+            <th pSortableColumn="profile">Profile <p-sortIcon field="profile"></p-sortIcon></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-user>
+        <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.doc}}</td>
+            <td>{{user.profile}}</td>
+        </tr>
+    </ng-template>
+</p-table>
+<button pButton title="Create user" type="button" icon="pi pi-pencil" class="p-button-text" (click)="createUser()"></button>
