@@ -13,12 +13,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './components/users/users.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
+import { CharacterListComponent } from './components/character-list/character-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    CharacterListComponent
   ],
   imports: [
     ButtonModule,
