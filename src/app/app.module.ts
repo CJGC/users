@@ -8,6 +8,7 @@ import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { ToastModule } from 'primeng/toast';
+import { PaginatorModule } from 'primeng/paginator';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { CharacterListComponent } from './components/character-list/character-li
     CharacterListComponent
   ],
   imports: [
+    PaginatorModule,
     ButtonModule,
     ToastModule,
     DynamicDialogModule,
