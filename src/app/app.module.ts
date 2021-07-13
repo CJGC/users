@@ -15,13 +15,15 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './components/users/users.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
 import { CharacterListComponent } from './components/character-list/character-list.component';
+import { CharacterCardComponent } from './components/character-card/character-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     CreateUserComponent,
-    CharacterListComponent
+    CharacterListComponent,
+    CharacterCardComponent
   ],
   imports: [
     PaginatorModule,
