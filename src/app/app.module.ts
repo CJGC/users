@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { TableModule } from 'primeng/table';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './components/users/users.component';
@@ -11,6 +13,7 @@ import { UsersComponent } from './components/users/users.component';
     UsersComponent
   ],
   imports: [
+    TableModule,
     BrowserModule,
     AppRoutingModule
   ],
