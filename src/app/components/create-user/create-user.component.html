@@ -1,0 +1,28 @@
+<form [formGroup]="userForm">
+    <div class="p-fluid p-formgrid p-grid">
+
+        <div class="p-field p-col-12 p-md-6">
+            <label for="doc">Document</label>
+            <input pInputText id="doc" type="text" formControlName="doc"> 
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+            <label for="name">Name</label>
+            <input pInputText id="name" type="text" formControlName="name"> 
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+            <label for="lastname">Lastname </label>
+            <input pInputText id="lastname" type="text" formControlName="lastname"> 
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+            <label for="profile">Profile </label>
+            <input pInputText id="profile" type="text" formControlName="profile"> 
+        </div>
+        
+        <div class="p-field p-col-12 p-md-6">
+            <p-button [disabled]="userForm.invalid" icon="pi pi-check" label="Create user" class="p-button-secondary" (click)="saveUser()"></p-button>
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+            <p-button icon="pi pi-times" label="Cancel" class="p-button-secondary" (click)="cancel()"></p-button>
+        </div>
+    </div>
+</form>
