@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiURL: 'https://sport-enlace.herokuapp.com'
+  apiURL: 'https://sport-enlace.herokuapp.com',
+  rickApiURL: 'https://rickandmortyapi.com'
 };
 
 /*
